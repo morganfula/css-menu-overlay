@@ -1,9 +1,10 @@
-body {
-  font-family: 'eesti';
-  font-size: 16px;
-  background: #FDFDFD;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #fdfdfd;
+}
 
 .container {
   padding: 0 32px;
@@ -11,12 +12,8 @@ body {
   width: 100%;
 }
 
-
 @media (max-width: 750px) {
-
   .container {
     padding: 0 24px;
   }
-
 }
-
