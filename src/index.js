@@ -1,5 +1,7 @@
-// here you put all the js you want.
-import Navbar from "./js/navbar.js";
+const nav = document.querySelector('nav');
 
-const navbar = new Navbar()
+console.log(nav);
 
+nav.addEventListener('click', () => {
+  document.body.classList.toggle('menu-open');
+});

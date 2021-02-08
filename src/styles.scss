@@ -15,6 +15,17 @@ nav {
   top: 20px;
   right: 20px;
 
+  &::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    display: block;
+    background: red;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+
   &::after {
     content: '';
     position: absolute;
@@ -49,7 +60,6 @@ nav {
       position: absolute;
       top: 0;
       left: 0;
-      box-sizing: border-box;
     }
   }
 }
