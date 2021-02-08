@@ -107,10 +107,28 @@ nav {
   }
 
   .image {
+    position: relative;
     background: green;
+
+    .item  {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+    }
   }
 
   .list {
-    background: hotpink;
+    .project--number {
+      padding: 40px;
+      font-size: 80px;
+    }
+
+    li {
+      padding: 40px;
+      font-size: 40px;
+    }
   }
 }
