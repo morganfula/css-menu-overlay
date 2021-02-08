@@ -18,10 +18,10 @@ nav {
   &::before {
     content: '';
     position: absolute;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     display: block;
-    background: red;
+    background: rgb(248, 248, 248);
     border-radius: 50%;
     transition: transform 0.2s ease-in-out;
   }
@@ -60,6 +60,28 @@ nav {
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+}
+
+.menu-open {
+  nav {
+    &::before {
+      transform: scale(50);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform 0.2s ease-in-out;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
     }
   }
 }
