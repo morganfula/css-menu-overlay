@@ -134,6 +134,16 @@ nav {
     li {
       font-size: 40px;
       padding: 40px 0px;
+
+      a {
+        transition: opacity 300ms ease;
+        width: fit-content;
+        cursor: pointer;
+      }
+
+      a:hover {
+        opacity: 0.4;
+      }
     }
   }
 }
