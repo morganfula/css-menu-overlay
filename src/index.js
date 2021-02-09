@@ -5,6 +5,6 @@ nav.addEventListener('click', () => {
   document.body.classList.toggle('menu-open');
 
   setTimeout(() => {
-    menu.style.display = 'flex';
+    menu.style.display = 'grid';
   }, 200);
 });

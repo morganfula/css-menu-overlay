@@ -98,17 +98,17 @@ nav {
   background: rgb(248, 248, 248);
   z-index: 20;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   .image,
-  .list {
-    flex: 1 0;
+  .list,
+  .item {
     height: 100%;
   }
 
   .image {
     position: relative;
-    background: green;
 
     .item  {
       position: absolute;
@@ -117,18 +117,23 @@ nav {
       right: 0;
       bottom: 0;
       background-size: cover;
+      background-position: center center;
     }
   }
 
+  .item--1 {
+  }
+
   .list {
+    padding: 40px;
+
     .project--number {
-      padding: 40px;
-      font-size: 80px;
+      margin-bottom: 100px;
     }
 
     li {
-      padding: 40px;
       font-size: 40px;
+      padding: 40px 0px;
     }
   }
 }
